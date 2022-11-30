@@ -1,5 +1,5 @@
 /*
-Declaring variables
+"Declaring variables"
 
 For the declarations, we use the keywords var or let for variables and const for constants.
 
