@@ -35,3 +35,22 @@ console.log(counter); // -> 100
   console.log(counter); // -> 200
 }
 console.log(counter); // -> 100
+
+/*
+Shadowing may not only be concerned with the situation in which a local variable covers a global variable. If nested scopes appear (e.g. nested blocks in the case 
+of a let declaration), the local variable declared in a more nested block will overshadow the local variable of the same name declared in the external block.
+
+Shadowing is also present in variable declarations using the word var, and this time the local scope is limited not by the program block, but by the function block.
+
+In most cases, this is not desirable, so try to avoid giving the same variable names to multiple variables, regardless of where you declare them.
+*/
+var counter = 100;
+
+function testFunction() {
+    var counter = 200;  
+    console.log(counter);
+}
+
+console.log(counter); // -> 100
+testFunction(); // -> 200
+console.log(counter); // -> 100
