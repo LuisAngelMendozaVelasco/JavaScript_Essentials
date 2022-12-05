@@ -49,3 +49,39 @@ console.log(message4); // -> Cyclone "Cilida" to pass close to Mauritius.
 
 let path = "C:\\Windows";
 console.log(path); // -> C:\Windows
+
+/*
+Trying to perform arithmetic operations on String type values, such as subtraction, multiplication, or division, will usually end in an error. More precisely, 
+the NaN value will be returned as a result of the action.
+
+Seeing the arithmetic operators -, *, or \, the JavaScript interpreter tries to interpret the given values as numbers, or convert them into numbers. So if the 
+character strings consists of digits, the automatic conversion will be successful and we will get the result of the arithmetic action as a Number type value. 
+If the character string cannot be interpreted as a number (and converted) we will get the NaN result.
+*/
+path = "C:\\Windows" - "Windows";
+console.log(path); // -> NaN
+
+let test = "100" - "10";
+console.log(test); // -> 90
+console.log(typeof test); // -> number
+
+/*
+The exception is the addition operation, which will not be treated as an arithmetic one, but as an attempt to create a new string by combining two input strings.
+*/
+path = "C:\\" + "Windows";
+console.log(path); // -> C:\Windows
+
+test = "100" + "10";
+console.log(test); // -> 10010
+console.log(typeof test); // -> string
+
+/*
+A very convenient mechanism that was introduced to JavaScriptn is string interpolation. It allows us to treat a character string as a template, in which 
+we can place values in selected places, such as those taken from variables. Such a literal is created using backticks (or grave accents) instead of quotation marks. 
+The places where values are inserted are marked with curly brackets preceded by a $ sign.
+*/
+country = "Malawi";
+continent = "Africa";
+
+let sentence = `${country} is located in ${continent}.`;
+console.log(sentence); // -> Malawi is located in Africa.
