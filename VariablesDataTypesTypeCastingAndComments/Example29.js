@@ -29,3 +29,40 @@ console.log(days[0]); // -> Sunday
 
 let emptyArray = [];
 console.log(emptyArray[0]); // -> undefined
+
+/*
+To add a new element to an existing array. The easiest way would be to assign a new value to a specific position using bracket notation. For the interpreter, 
+it doesn't matter if there is already something in this index or not. It just places a new value in there. What's interesting is that we don't have to fill the array 
+with elements one by one – we can leave empty spaces in it.
+
+We declare an empty animals array. We then place two elements, "dog" and "cat", in positions 0 and 2, leaving position 1 empty. This, however, is not the only way 
+to add new elements to the array, 
+*/
+let animals = [];
+console.log(animals[0]); // -> undefined
+
+animals[0] = "dog";
+animals[2] = "cat";
+
+console.log(animals[0]); // -> dog
+console.log(animals[1]); // -> undefined
+console.log(animals[2]); // -> cat
+
+/*
+Usually, we store the same type of data in one array, but this is not required by JavaScript. So we can easily create an array containing elements of different types.
+*/
+let values = ["Test", 7, 12.3, false];
+
+/*
+An array element can be of any type. What is interesting is the fact that we can also store arrays as elements of the array, and we can access the elements of this 
+nested array using multiple square brackets. The example shows an array declaration containing two other arrays as its components. Note that the internal arrays do 
+not have to be the same length (in many other programming languages, this is required).
+*/
+let names = [["Olivia", "Emma", "Mia", "Sofia"], ["William", "James", "Daniel"]];
+console.log(names[0]); // -> ["Olivia", "Emma", "Mia", "Sofia"]
+console.log(names[0][1]); // -> Emma
+console.log(names[1][1]); // -> James
+
+let femaleNames = names[0];
+console.log(femaleNames[0]); // -> Olivia
+console.log(femaleNames[2]); // -> Mia
