@@ -61,3 +61,26 @@ console.log(users[2].name); // -> Irene
 During the program's operation, it is possible to interact with the user, for example, to retrieve data the user has entered. Such data could be used to create 
 more objects and extend the array with elements we did not know about while writing the program.
 */
+
+/*
+Apply the typeof operator to the variable containing the array.
+*/
+let days1 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+console.log(typeof days1); // -> object
+
+/*
+To speak quite generally, in JavaScript, everything except primitives is an object. Arrays are also treated as a special kind of object. The typeof operator does 
+not distinguish between object types (or more precisely, classes), so it informs us that the days variable contains an object. If we would like to make sure that 
+the variable contains an array, we can do it using the instanceof operator, among others. It is closely related to object-oriented programming.
+
+The instanceof operator is a two-argument operator, which requires the tested variable (or literal) and object class to be specified. In our case, the class is Array. 
+The operator returns true or false, depending on the test result.
+*/
+let days2 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+let day = "Sunday";
+
+console.log(typeof days2); // -> object
+console.log(typeof day); // -> string
+
+console.log(days instanceof Array); // -> true
+console.log(day instanceof Array); // -> false
