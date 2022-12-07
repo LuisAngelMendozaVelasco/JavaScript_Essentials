@@ -1,0 +1,28 @@
+<!-- 
+"Prompt dialog box"
+
+It’s a further development of the confirm popup. Like the confirm dialog box, it contains the OK and Cancel buttons, but it also contains a single-line text field 
+that allows the user to input text.
+
+As with other dialog boxes, the prompt accepts an optional parameter as a message that will be displayed. The prompt also accepts a second optional parameter, which 
+is the default value of the text field visible in the dialog window. The same as confirm, the prompt method will return a result that is dependent on user input.
+
+If the user closes the window with the OK button, anything in the text field will be returned from the prompt method as a string. If the dialog box is closed with the 
+Cancel button, the method will return a null value. Due to the fact that on pressing the OK button, the value returned will be of the String type, we sometimes need 
+to convert it to another type, for example, to a Number type. As with all user input, we need to be prepared for the fact that the data provided by the user can be 
+invalid, either by mistake or on purpose, so always treat values like this with extra caution.
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body> 
+        <script>
+            let name = window.prompt("What is your name?", "Luis Mendoza");
+            name = name ? name : "anonymous";
+
+            let age = prompt("Hello " + name + " how old are you?");
+            alert(name + " is " + age + " years old");
+        </script>     
+    </body>
+</html>
