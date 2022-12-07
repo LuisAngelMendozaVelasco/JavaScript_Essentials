@@ -1,0 +1,40 @@
+<!-- 
+"Dialog boxes"
+
+Dialog boxes are integral parts of web browsers, and available in almost all of them, even really old ones. All of them are popup windows (or modal windows) which 
+means that when the dialog box is displayed, it isn’t possible to interact with the webpage itself until this dialog box is closed. This inconvenience when the popup 
+is visible is one of the reasons why we shouldn’t overuse them. They’re perfectly fine for the learning process, and in some rare cases where important information 
+needs to be displayed, or some input from the user is mandatory, but they should be avoided in other circumstances. We have three dialog boxes available to use.
+ -->
+
+<!-- 
+"Alert dialog box"
+
+Alert dialog box
+The alert dialog box is the simplest one of the three, and to show an alert box, we need to call a method named alert(). The alert method accepts one optional 
+parameter – the text that will be displayed. The alert method is a method of the object window, but for convenience, it can be used without the need to type 
+window.alert, so both forms are correct and can be seen in real applications. The window object is a generalization of the browser window or tab, and gives the 
+developer access to data related to the state of this window (for example, how far the page is scrolled down, because the console object is part of the window object) 
+and also some methods to control this state.
+
+Just like console.log, we can insert any value to the alert method and it will be converted to a string. The difference is that we can put an arbitrary number of 
+parameters to console.log, whereas with the alert we must put only one (or zero, as it’s an optional parameter).
+
+The alert window will be visible until the user clicks the OK button visible on the popup. Code execution will be halted until the dialog box is closed.
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body> 
+        <script>
+            alert("Hello, World!")
+            window.alert("Hello, World! for the second time");
+
+            alert(4 * 7);
+            alert(true);
+
+            alert("text 1", "text 2"); // only "text 1" will be displayed
+        </script>     
+    </body>
+</html>
