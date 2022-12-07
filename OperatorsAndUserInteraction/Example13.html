@@ -1,0 +1,25 @@
+<!-- 
+"Confirm dialog box"
+
+Like alert, it’s a method that accepts one optional parameter – a message that will be displayed. The difference between alert and confirm is that the confirm dialog 
+box displays two buttons, the OK button and the Cancel button. Depending on the button pressed by the user, the confirm method returns a Boolean value. True is returned 
+when the user closes the dialog box using the OK button, and false is returned when the user presses the Cancel button.
+
+The values true or false, returned by the confirm method as a result of the user's decision, allow for conditional execution of some program actions. In the example 
+below, we have additionally used a recently learned conditional operator:
+ -->
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body> 
+        <script>
+            let decision = window.confirm("Is it OK?");
+            console.log(decision);
+
+            let remove = confirm("Remove all data?");
+            let message = remove ? "Deleting Data" : "Cancelled"
+            console.log(message);
+        </script>     
+    </body>
+</html>
