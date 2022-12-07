@@ -84,3 +84,8 @@ console.log(typeof day); // -> string
 
 console.log(days instanceof Array); // -> true
 console.log(day instanceof Array); // -> false
+
+/*
+It turns out that an array is implemented as an object in JavaScript, so it probably also has its methods and properties. There are many very useful methods that 
+help us to work with arrays, such as combining arrays, cutting out elements, sorting, or filtering.
+*/
