@@ -1,0 +1,42 @@
+<!-- 
+"The break keyword - continued"
+
+The last important part is that if a more complex code is needed inside any given case, we should place that code in separate code blocks by additionally surrounding 
+the code with curly brackets. This will add to code readability and allow for the declaration of variables only in the given case scope.
+
+In the example, a redeclaration error would be observed in each of the cases and would not be encapsulated in its own scope.
+ -->
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body> 
+        <script>
+            let gate = prompt("Choose gate: a, b, or c");
+            let win = false;
+
+            switch (gate) {
+                case "a": {
+                    let message = "Gate A";
+                    console.log(message);
+                    break;
+                }
+                case "b": {
+                    let message = "Gate B";
+                    console.log(message);
+                    break;
+                }
+                case "c": {
+                    let message = "Gate C";
+                    console.log(message);
+                    break;
+                }
+                default:
+                    alert("No gate " + String(gate));
+            }
+
+            if (win) {
+                alert("Winner!");
+            }
+        </script>     
+    </body>
+</html>
