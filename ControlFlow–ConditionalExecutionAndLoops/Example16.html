@@ -42,17 +42,17 @@ one during each iteration. This is obviously not the only approach. For example,
 initialize the index variable with the value of the largest index and decrease it by one during each iteration. There is also nothing to stop us from jumping a few 
 elements at a time, incrementing or decrementing the index variable by a value greater than one.
 
-let values = [10, 30, 50, 100];
+    let values = [10, 30, 50, 100];
 
-for (let i = 0; i < values.length; i++) {
-    console.log(values[i]); // -> 10, 30, 50, 100
-}
+    for (let i = 0; i < values.length; i++) {
+        console.log(values[i]); // -> 10, 30, 50, 100
+    }
 
-for (let i = values.length - 1; i > 0; i--) {
-    console.log(values[i]); // -> 100, 50, 30, 10
-}
+    for (let i = values.length - 1; i > 0; i--) {
+        console.log(values[i]); // -> 100, 50, 30, 10
+    }
 
-for (let i = 0; i < values.length; i += 2) {
-    console.log(values[i]); // -> 10, 50
-}
+    for (let i = 0; i < values.length; i += 2) {
+        console.log(values[i]); // -> 10, 50
+    }
  -->
