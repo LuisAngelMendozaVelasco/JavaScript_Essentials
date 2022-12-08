@@ -1,0 +1,58 @@
+<!-- 
+"Loops and arrays"
+
+We want the user to enter names during the program's execution (we will use the prompt dialog box), which will be placed in the array one by one. Entering the names 
+will end when the Cancel button is pressed. Then we will write the entire contents of the array (i.e. all entered names) to the console.
+
+The names array is initially empty. In each iteration of the while loop we call the prompt dialog box. If the user enters a new name and presses the OK button, this 
+name will be entered in the local name variable. If the user clicks Cancel, the variable will contain null. So we check in the conditional instruction if the name is 
+different from null. If so, the value of the name variable is attached to the end of the names array using the push method (if you do not remember it, go back to the 
+chapter where we discussed arrays). If the name is null, the isOver variable value is changed to end the while loop.
+
+After leaving the while loop, we go through the whole names array (using the for loop and the length property of the names array) and we display all the names placed 
+there. In this way, we have done something absolutely new unnoticed. Using arrays, loops, and interaction with the user (prompt dialog box) we have created and filled 
+in a dynamic data structure. Note that while writing this program, it is not clear how many array elements there will be, or even what elements there will be.
+ -->
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body> 
+        <script>
+            let names = [];
+            let isOver = false;
+            while (!isOver) {
+                let name = prompt("Enter another name or press cancel.");
+                if (name != null) {
+                    names.push(name);
+                } else {
+                    isOver = true;
+                }
+            }
+
+            for (let i = 0; i < names.length; i++){
+                console.log(names[i]);
+            }
+        </script>     
+    </body>
+</html>
+
+<!-- 
+Going through the elements of the array, we use an index variable that we initialize with the value 0 (the index of the first element in the array) and increment it by 
+one during each iteration. This is obviously not the only approach. For example, if we wanted to go through the elements of the array in reverse order, we would 
+initialize the index variable with the value of the largest index and decrease it by one during each iteration. There is also nothing to stop us from jumping a few 
+elements at a time, incrementing or decrementing the index variable by a value greater than one.
+
+let values = [10, 30, 50, 100];
+
+for (let i = 0; i < values.length; i++) {
+    console.log(values[i]); // -> 10, 30, 50, 100
+}
+
+for (let i = values.length - 1; i > 0; i--) {
+    console.log(values[i]); // -> 100, 50, 30, 10
+}
+
+for (let i = 0; i < values.length; i += 2) {
+    console.log(values[i]); // -> 10, 50
+}
+ -->
