@@ -39,6 +39,10 @@ Let`s call it with sample arguments:
 /*
 The getMeanTemp function will take one parameter – temperatures. At the same time, we will remove the global variable with this name from the program and create two 
 others, day1 and day2, which will contain the measurement data. These data will be passed on to the function.
+
+The first time the getMeanTemp function is called, the day1 variable is passed on to the getMeanTemp function as an argument. The calculations performed inside the 
+function using the temperatures parameter will therefore be based on the values from the day1 variable. In the second call, we pass another array to the function, 
+stored in the day2 variable.
 */
 function getMeanTemp(temperatures) {
     let sum = 0;
