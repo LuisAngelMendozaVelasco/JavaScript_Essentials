@@ -14,7 +14,7 @@ let myAdd = function add(a, b) {
 }
 
 console.log(myAdd(10, 20)); // -> 30
-console.log(add(10, 20)); // -> 30
+// console.log(add(10, 20)); // -> 30
 
 /*
 If there is a named function expression, there will probably also 
