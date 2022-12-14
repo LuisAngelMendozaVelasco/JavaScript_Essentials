@@ -1,0 +1,29 @@
+<!-- 
+"Asynchronous callbacks - continued"
+
+If we run the JavaScript code on the client side, in the browser, it is always associated with the website. The window in which this page is located is represented in 
+the client-side JavaScript by a global window variable. The window object has a method (or its own function) named addEventListener. This function allows us to register 
+a certain action to be performed in response to a window-related event. Such an event can be a "click", which is a single mouse click on any place on the page (there is 
+a limited set of named events associated with a particular object, to which it can react). The action to be taken is passed to the addEventListener method as a callback 
+function.
+ -->
+
+<!--  
+When we execute the sample code, nothing special should happen immediately after it is started. Only when we click anywhere on the page should a message appear on the 
+console: "clicked!". Our function is not called until the "click" event occurs, which is absolutely asynchronous. In the meantime, between subsequent clicks, the rest 
+of the program could be executed, if we had a whim to write it.
+
+In fact, it is not a very good idea to connect a click response to a window object. Most often, such actions are associated with specific elements of the interface 
+(buttons, checkboxes, etc.) 
+ -->
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body> 
+        <script>
+            window.addEventListener("click", function() {
+                console.log("clicked!");
+            });
+        </script>     
+    </body>
+</html>
