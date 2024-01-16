@@ -1,0 +1,35 @@
+<!------------------------------->
+<!-- The if ... else statement -->
+<!------------------------------->
+
+<!--
+The if statement is very handy indeed, but what if we also want to execute some code when a given condition is not met? We could of course just use another if 
+statement and change the condition.
+
+This will work as expected, but it doesn't look very good. What if in the future we have to change this condition? Will we remember to change it in both places? 
+This is a possible future logic error. So what can we do? We can use an else keyword.
+
+The else keyword is an optional part of the if statement, and it allows us to add a second code block that will be executed only when the initial condition is NOT met. 
+Both blocks of code are separated using the else keyword.
+-->
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body> 
+        <script>
+            let isUserReady = confirm("Are you ready?");
+
+            if (isUserReady) {
+                console.log("User ready!");
+            } 
+            else {
+                console.log("User not ready!");
+            }
+        </script>     
+    </body>
+</html>
+
+<!-- 
+Now we have only one condition, and we’re sure that one of the two code blocks will be executed. Such a structure is used very often and is especially useful 
+when we have two alternative versions of the code.
+-->

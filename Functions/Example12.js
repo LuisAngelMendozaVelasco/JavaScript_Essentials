@@ -1,6 +1,8 @@
-/*
-"Callbacks"
+///////////////
+// Callbacks //
+///////////////
 
+/*
 Functions that are passed as arguments to other functions may seem quite exotic and not very helpful, but in fact, they are a very important part of programming. So 
 important that they even get their own name. They are callback functions. A function that receives a callback as an argument can call it at any time. Importantly, in 
 our examples, the callback is run synchronously, that is, it is executed in a strictly defined order resulting from where it is placed among the other instructions.
@@ -22,6 +24,6 @@ let outer = function(callback) {
     console.log('outer 2');
 }
 
-console.log('test 1');
-outer(inner);
-console.log('test 2');
+console.log('test 1'); // -> test 1
+outer(inner); // -> outer 1, inner 1, outer 2
+console.log('test 2'); // -> test 2

@@ -1,0 +1,44 @@
+<!-------------------------------------->
+<!-- Conditional operator - continued -->
+<!-------------------------------------->
+
+<!--
+The conditional operator returns the values of the second or third operand, but if they are complex expressions, it will calculate them first. We can use this fact 
+to place the commands to be executed conditionally as these operands.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body> 
+        <script>
+            let number = prompt("Enter a number", 0);
+
+            if (number < 10) {
+                alert("<10");
+            } 
+            else if (number < 30) {
+                alert("<30");
+            } 
+            else if (number < 60) {
+                alert("<60");
+            } 
+            else if (number < 90) {
+                alert("<90");
+            } 
+            else if (number < 100) {
+                alert("<100");
+            } 
+            else if (number == 100) {
+                alert("100")
+            } 
+            else {
+                alert(">100")
+            }
+        </script>     
+    </body>
+</html>
+ 
+<!-- 
+It’s possible to have longer code as operands, but it’s better to use if statements, as it is much clearer what intention the developer had when writing the code.
+ -->

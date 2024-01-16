@@ -1,6 +1,8 @@
-/*
-"Recursion"
+///////////////
+// Recursion //
+///////////////
 
+/*
 A recursion is a mechanism that allows to simplify the formal notation of many mathematical functions and present them in an elegant form. We can also successfully use 
 recursion in programming.
 */

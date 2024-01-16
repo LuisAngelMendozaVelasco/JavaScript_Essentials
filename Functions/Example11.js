@@ -1,6 +1,8 @@
-/*
-"Function expressions"
+//////////////////////////
+// Function expressions //
+//////////////////////////
 
+/*
 To store a function in a variable or pass it as an argument to call a function, we do not necessarily have to declare it previously and use its name. 
 We can call the same function using both the name add and the variable myAdd. We can shorten this notation and declare the function by storing it in a variable.
 */
@@ -50,5 +52,4 @@ myAdd = function(a, b) {
 }
 
 console.log(operation(myAdd, 10, 20)); // -> 30
-
 console.log(operation(function(a, b) {return a * b;}, 10, 20)); // -> 200

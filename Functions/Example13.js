@@ -1,6 +1,8 @@
-/*
-"Asynchronous callbacks"
+////////////////////////////
+// Asynchronous callbacks //
+////////////////////////////
 
+/*
 Asynchronous operation of programs is a rather complex topic, strongly dependent on a particular programming language, and often also on the environment.
 
 In the case of client-side JavaScript running in a browser, it is limited to event-based programming, i.e. the asynchronous response to certain events. An event can be 
@@ -25,10 +27,10 @@ let inner = function() {
     
 let outer = function(callback) {
     console.log('outer 1');
-    setTimeout(callback, 1000) /*ms*/;
+    setTimeout(callback, 1000); // 10000 ms
     console.log('outer 2');
 }
     
-console.log('test 1');
-outer(inner);
-console.log('test 2');
+console.log('test 1'); // -> test 1
+outer(inner); // -> outer 1, outer 2, inner 1
+console.log('test 2'); // -> test 2

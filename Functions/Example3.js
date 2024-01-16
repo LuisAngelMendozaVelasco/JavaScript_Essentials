@@ -1,6 +1,8 @@
-/*
-"Functions - Local variables"
+/////////////////////////////////
+// Functions - Local variables //
+/////////////////////////////////
 
+/*
 we call the variables that are declared and used in some limited scope and are not visible in the whole program, which means that we can only use them inside that 
 particular scope. Variables declared with the let keyword are local inside the code block (i.e. inside the range limited by curly brackets), while variables declared 
 with the var keyword are local inside the function block. So if we declare a variable inside a function block, whether using let or var, it will only be visible (and 
@@ -18,9 +20,11 @@ let meanTemp;
 
 function getMeanTemp() {
     let sum = 0;
+
     for (let i = 0; i < temperatures.length; i++) {
         sum += temperatures[i];
     }
+    
     meanTemp = sum / temperatures.length;    
 }
 

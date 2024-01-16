@@ -1,8 +1,8 @@
-/*
-"Calling functions"
+///////////////////////
+// Calling functions //
+///////////////////////
 
-To call a function, we need to write a function name and follow it with parentheses. 
-*/
+// To call a function, we need to write a function name and follow it with parentheses.
 
 let temperatures;
 let sum;
@@ -10,9 +10,11 @@ let meanTemp;
 
 function getMeanTemp() {
     sum = 0;
+
     for (let i = 0; i < temperatures.length; i++) {
         sum += temperatures[i];
     }
+    
     meanTemp = sum / temperatures.length;    
 }
 

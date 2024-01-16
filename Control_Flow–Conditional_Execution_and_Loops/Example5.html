@@ -1,0 +1,42 @@
+<!---------------------------------->
+<!-- The if … else … if statement -->
+<!---------------------------------->
+
+<!--
+Both if and if … else statements give us great flexibility in how code can behave in relation to anything else. But branching the code execution flow only to two 
+branches is sometimes not enough. There’s a simple solution to this in JavaScript – we can nest if ... else statements. An else segment can have an if or if … else 
+statement inside it, and it’s possible to nest any number of if … else statements in this way if needed.
+-->
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body> 
+        <script>
+            let number = prompt("Enter a number", 0);
+
+            if (number < 10) {
+                alert("<10");
+            } 
+            else if (number < 30) {
+                alert("<30");
+            } 
+            else if (number < 60) {
+                alert("<60");
+            } 
+            else if (number < 90) {
+                alert("<90");
+            } 
+            else if (number < 100) {
+                alert("<100");
+            } 
+            else if (number == 100) {
+                alert("100")
+            } 
+            else {
+                alert(">100")
+            }
+        </script>     
+    </body>
+</html>
+
+<!-- Only one alert will be shown, and JavaScript will stop checking conditions after the first condition that has been met. -->

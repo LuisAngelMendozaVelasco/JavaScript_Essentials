@@ -1,6 +1,8 @@
-/*
-"The return statement"
+//////////////////////////
+// The return statement //
+//////////////////////////
 
+/*
 Functions that have been called execute a sequence of instructions contained in their body. The result of this execution may be a certain value that we may want to 
 store in some variable. The return keyword comes to help us in this case. 
     *First, it causes the function to end exactly where this word occurs, even if there are further instructions.

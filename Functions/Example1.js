@@ -1,6 +1,8 @@
-/*
-"Declaring variables"
+/////////////////////////
+// Declaring variables //
+/////////////////////////
 
+/*
 As with variables, functions need to be declared before we can use them. The syntax for function declaration looks like this:
     function functionName() {
     code
@@ -23,8 +25,10 @@ let meanTemp;
 
 function getMeanTemp() {
     sum = 0;
+
     for (let i = 0; i < temperatures.length; i++) {
         sum += temperatures[i];
     }
+    
     meanTemp = sum / temperatures.length;    
 }

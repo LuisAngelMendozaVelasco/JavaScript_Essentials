@@ -1,6 +1,8 @@
-/*
-"Functions as first-class members"
+//////////////////////////////////////
+// Functions as first-class members //
+//////////////////////////////////////
 
+/*
 In JavaScript, functions are first-class members. This term means that functions can be treated as any data, which can be stored in variables or passed as arguments to 
 other functions. For example, we can declare the showMessage function and then store it in the variable sm.
 */
@@ -30,8 +32,8 @@ function doNothing() {
     return undefined;
 }
 
-let a = doNothing(); // assign result of function call
-let b = doNothing;   // assign a function
+let a = doNothing(); // Assign result of function call
+let b = doNothing;   // Assign a function
 
 console.log(typeof a); // -> undefined
 console.log(typeof b); // -> function

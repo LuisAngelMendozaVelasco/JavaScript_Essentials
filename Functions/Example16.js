@@ -1,6 +1,8 @@
-/*
-"Arrow functions"
+/////////////////////
+// Arrow functions //
+/////////////////////
 
+/*
 An arrow function is a shorter form of a function expression. An arrow function expression is composed of: parentheses containing zero to multiple parameters 
 (if exactly one parameter is present, the parentheses can be omitted); an arrow that looks like this "=>"; and the body of the function, which can be surrounded by 
 curly brackets if the body is longer. If an arrow function has only one statement and returns its value, we can omit the return keyword, as it will be implicitly added. 
@@ -9,10 +11,10 @@ curly brackets if the body is longer. If an arrow function has only one statemen
 let add = (a, b) => {
     return a + b;
 }
+
 console.log(add(10, 20)); // -> 30
 
-//or simplified even more (the function has only one statement, whose value returns):
-
+// or simplified even more (the function has only one statement, whose value returns):
 add = (a, b) => a + b;
 console.log(add(10, 20)); // -> 30
 
@@ -38,7 +40,9 @@ The same effect can be achieved by passing an anonymous arrow function to the fo
 it only here and will not refer to it again.
 */
 let names = ['Alice', 'Eve', 'John'];
+
 function showName(element) {
     console.log(element);
 }
+
 names.forEach(showName); // -> Alice, Eve, John

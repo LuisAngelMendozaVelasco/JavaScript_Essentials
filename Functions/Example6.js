@@ -1,6 +1,8 @@
-/*
-"Parameters"
+////////////////
+// Parameters //
+////////////////
 
+/*
 The use of parameters in functions is optional. There may be functions that do not have parameters. However, most often we create functions that have defined parameters 
 and return values.
 
@@ -46,9 +48,11 @@ stored in the day2 variable.
 */
 function getMeanTemp(temperatures) {
     let sum = 0;
+
     for (let i = 0; i < temperatures.length; i++) {
         sum += temperatures[i];
     }
+    
     return sum / temperatures.length;
 }
     
