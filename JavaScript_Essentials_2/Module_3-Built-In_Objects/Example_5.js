@@ -1,0 +1,16 @@
+// 3.1.5 The Number constructors
+
+let nrStr1 = (11).toString();
+let nrStr2 = (11).toString(16);
+console.log(`nrStr1 : ${typeof nrStr1} : ${nrStr1}`); // -> nrStr1 : string : 11
+console.log(`nrStr2 : ${typeof nrStr2} : ${nrStr2}`); // -> nrStr1 : string : b
+
+let numberObj1 = new Number;            // -> 0
+let numberObj2 = new Number(100);       // -> 100
+let numberObj3 = new Number("200");     // -> 200
+let numberObj4 = new Number("abcd");    // -> NaN
+let numberObj5 = new Number(9e10000);   // -> Infinity
+console.log(`numberObj1 : ${typeof numberObj1} : ${ numberObj1.valueOf()}`); // -> numberObj1 : object : 0
+
+let nr = Number("100");
+console.log(`nr : ${typeof nr} : ${ nr}`); // -> nr : number : 100
